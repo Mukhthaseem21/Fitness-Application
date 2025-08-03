@@ -1,0 +1,13 @@
+# IDE settings
+.idea/
+.vscode/
+
+# Build output
+**/target/
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
