@@ -30,3 +30,9 @@ rabbitmq:
     name : activity.queue
   routing:
     Key : activity.tracking                
+
+gemini:
+  api:
+    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent
+    key: REMOVED_API_KEY   
+
