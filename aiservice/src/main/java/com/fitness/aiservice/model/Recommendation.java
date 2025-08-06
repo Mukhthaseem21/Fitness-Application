@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 
 
 
-@Document(collection = "recommendation")
+@Document(collection = "recommendations")
 @Data
 @Builder
 @AllArgsConstructor

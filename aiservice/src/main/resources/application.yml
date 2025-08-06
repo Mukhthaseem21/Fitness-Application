@@ -1,22 +1,18 @@
 server:
-  port: 8083 
-
+  port: 8083
 
 spring:
   application:
     name: ai-service
-    data:
+  data:
     mongodb:
       uri: mongodb://localhost:27017/fitnessrecommendation
-      database: fitnessrecommendation 
-    rabbitmq:
+      database: fitnessrecommendation
+  rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
-
-
-
 
 eureka:
   client:
@@ -27,12 +23,11 @@ rabbitmq:
   exchange:
     name: fitness.exchange
   queue:
-    name : activity.queue
+    name: activity.queue
   routing:
-    Key : activity.tracking                
+    Key: activity.tracking
 
 gemini:
   api:
-    url: https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent
-    key: REMOVED_API_KEY   
-
+    url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+    key: ${GEMINI_API_KEY}
